@@ -26,11 +26,11 @@ function NavBar() {
       </li>
       <li className="nav-item">
         <Link
-          to="/Blog"
+          to="/Portfolio"
           
-          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Portfolio
         </Link>
       </li>
       <li className="nav-item">
@@ -41,6 +41,14 @@ function NavBar() {
         >
           Contact
         </Link>
+      </li>
+      <li className="nav-item">
+        <a href ="https://docs.google.com/document/d/1rjr9d1tZrQRdK_48iBFE9qlvsaT-92VXBUAPyjM4t9w/edit?usp=sharing"
+       className= 'nav-link'
+       target='_blank'
+        >
+          Resume
+        </a>
       </li>
     </ul>
   );
