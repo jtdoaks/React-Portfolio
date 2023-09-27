@@ -6,7 +6,9 @@ function Footer() {
 
     return (
         <div>
-            <FaGithubSquare/> <FaLinkedin/> <FaHeart/>
+            <a href = "https://github.com/jtdoaks"  target='_blank'><FaGithubSquare/></a> 
+            <a href = "www.linkedin.com/in/john-doaks-86028b267"  target='_blank'><FaLinkedin/></a> 
+            <a href = "https://github.com/jtdoaks"  target='_blank'><FaHeart/></a>
         </div>);
 
 }
