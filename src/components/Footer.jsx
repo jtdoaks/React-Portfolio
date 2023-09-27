@@ -1,10 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
-
+import { FaGithubSquare, FaLinkedin, FaHeart } from 'react-icons/fa'
 
 function Footer() {
     const currentPage = useLocation().pathname;
 
-return ( <p>goodbye cruel world</p>);
+    return (
+        <div>
+            <FaGithubSquare/> <FaLinkedin/> <FaHeart/>
+        </div>);
 
 }
 

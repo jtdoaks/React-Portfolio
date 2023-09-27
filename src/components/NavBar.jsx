@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-
+import Resume from "../assets/Resume.pdf"
 
 function NavBar() {
   const currentPage = useLocation().pathname;
@@ -35,7 +35,7 @@ function NavBar() {
         </Link>
       </li>
       <li className="nav-item">
-        <a href="https://docs.google.com/document/d/1rjr9d1tZrQRdK_48iBFE9qlvsaT-92VXBUAPyjM4t9w/edit?usp=sharing"
+        <a href= {Resume}
           className='nav-link'
           target='_blank'
         >
