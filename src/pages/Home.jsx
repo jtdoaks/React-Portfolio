@@ -1,15 +1,14 @@
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">About Me</h5>
+          <p className="card-text">This is about John wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <img className="card-img" src="src\assets\cover-photo.jpg" alt="Card image cap"></img>
+      </div>
     </div>
   );
 }

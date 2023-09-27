@@ -5,17 +5,13 @@ function Footer() {
     const currentPage = useLocation().pathname;
 
     return (
-        <div>
+        <div className="footer-icons">
             <a href = "https://github.com/jtdoaks"  target='_blank'><FaGithubSquare/></a> 
-            <a href = "www.linkedin.com/in/john-doaks-86028b267"  target='_blank'><FaLinkedin/></a> 
-            <a href = "https://github.com/jtdoaks"  target='_blank'><FaHeart/></a>
+            <a href = "https://linkedin.com/in/john-doaks-86028b267"  target='_blank'><FaLinkedin/></a> 
+            <a href = "https://stuffonmycat.com/"  target='_blank'><FaHeart/></a>
         </div>);
 
 }
-
-
-
-
 
 
 
