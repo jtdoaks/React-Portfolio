@@ -1,4 +1,4 @@
-import coverPhoto from "../assets/cover-photo.jpg"
+import coverPhoto from "../assets/cover-photo.png"
 
 export default function About() {
   return (
