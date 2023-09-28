@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <div>
-      <h1 className="title">John Doaks: Undercover Coder</h1>
+      <h1 className="title">John Doaks</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link

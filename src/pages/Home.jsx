@@ -1,3 +1,5 @@
+import coverPhoto from "../assets/cover-photo.jpg"
+
 export default function About() {
   return (
     <div>
@@ -7,7 +9,7 @@ export default function About() {
           <p className="card-text">This is about John wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <img className="card-img" src="src\assets\cover-photo.jpg" alt="Card image cap"></img>
+        <img className="card-img" src={coverPhoto} alt="Card image cap"></img>
       </div>
     </div>
   );
