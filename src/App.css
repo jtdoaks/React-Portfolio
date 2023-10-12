@@ -19,13 +19,21 @@
   padding: 2em;
 }
 
-.footer-icons{
+.footer-icons {
   margin: 10px;
 }
 
-.card-img{
+.card-img {
   border-radius: 8px;
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.project-img {
+  height: 120px;
+  width: 180px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
