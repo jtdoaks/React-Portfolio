@@ -15,7 +15,7 @@ function App() {
     <>
     
       <NavBar />
-      <main className="mx-3">
+      <main className="main-outlet">
         <Outlet />
       </main>
       <Footer/>
