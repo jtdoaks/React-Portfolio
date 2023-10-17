@@ -1,0 +1,14 @@
+.footer {
+    background-color: #eff2e8;
+    height: 100vh;
+}
+
+  .footerLinks {
+    font-size: 20px;
+  
+    text-decoration: none; 
+    color: purple;
+  
+    padding: 6px;
+  }
+  
