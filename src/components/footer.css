@@ -1,5 +1,6 @@
 .footer {
     background-color: #eff2e8;
+    max-height: 50px;
     height: 100vh;
 }
 
