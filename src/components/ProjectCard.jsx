@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import './project.css'
+import './projectCard.css'
 
 function Project({ title, description, image, deployedLink, gitHubLink }) {
     const currentPage = useLocation().pathname;

@@ -1,4 +1,7 @@
-import Project from "../components/Project";
+import Project from "../components/ProjectCard";
+
+import '../components/projectCard.css'
+
 import techImage from "../assets/tech-blog.png";
 import jeopardyImage from "../assets/Jeopardy-Gameboard.png";
 import bookImage from "../assets/book-review.png";
@@ -59,8 +62,8 @@ export default function Portfolio() {
   ]
 
   return (
-    <div>
-      <h1>Portfolio Page</h1>
+    <div className="projectsDiv">
+      <h1 className="projectsTitle">My Projects</h1>
       {projects.map(project => (
         <Project
           title={project.title}

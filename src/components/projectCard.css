@@ -5,10 +5,27 @@
     
   }
 
+.img-div{
+  display: flex;
+  display: inline-flex;
+}
+
   .project-img {
     border-radius: 8px;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
+  }
+
+
+
+  /* css for Porjects.jsx */
+
+  .projectsDiv{
+    background-color: #eff2e8;
+  }
+
+  .projectsTitle{
+    padding-top: 1rem;
   }
