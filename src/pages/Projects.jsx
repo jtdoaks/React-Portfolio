@@ -64,16 +64,19 @@ export default function Portfolio() {
   return (
     <div className="projectsDiv">
       <h1 className="projectsTitle">My Projects</h1>
-      {projects.map(project => (
-        <Project
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          deployedLink={project.deployedLink}
-          gitHubLink={project.gitHubLink}
-          key = {project.id}
-        />
-      ))}
+      <div className="row">
+        {projects.map((project) => (
+          <div key={project.id} className="col-lg-4 col-md-6 col-sm-12">
+            <Project
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              deployedLink={project.deployedLink}
+              gitHubLink={project.gitHubLink}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

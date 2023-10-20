@@ -1,31 +1,33 @@
 .project-cards {
-    padding: 2em;
-    background-color: white;
-    border-radius: 8px;
-    
-  }
+  padding: 2em;
+  margin: 4px;
+  background-color: white;
+  border-radius: 8px;
+  height: 300px;
+  width: 375px;
+}
 
 /* .img-div{
   display: flex;
   display: inline-flex;
 } */
 
-  .project-img {
-    border-radius: 8px;
-    max-width: 100%;
-    height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
-  }
+.project-img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 
 
-  /* css for Porjects.jsx */
+/* css for Porjects.jsx */
 
-  .projectsDiv{
-    background-color: #eff2e8;
-  }
+.projectsDiv {
+  background-color: #eff2e8;
+}
 
-  .projectsTitle{
-    padding-top: 1rem;
-  }
+.projectsTitle {
+  padding-top: 1rem;
+}

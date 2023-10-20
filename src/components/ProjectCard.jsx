@@ -5,10 +5,10 @@ function Project({ title, description, image, deployedLink, gitHubLink }) {
     const currentPage = useLocation().pathname;
 
     return (
-        <div className=" col-lg-4 col-md-6 col-sm-12" >
-            <div className="project-cards">
+        
+            <div className="project-cards ">
 
-                <div className="row ">
+          
 
                     <div className="img-div ">
                         <img src={image} className="project-img rounded-start" alt="..." />
@@ -24,8 +24,8 @@ function Project({ title, description, image, deployedLink, gitHubLink }) {
                         </div>
 
                     </div>
-                </div>
-            </div>
+                
+           
         </div>);
 
 }
