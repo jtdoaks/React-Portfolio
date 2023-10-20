@@ -5,6 +5,8 @@
   border-radius: 8px;
   height: 300px;
   width: 375px;
+  /* position: relative;
+  z-index: 0; */
 }
 
 /* .img-div{
@@ -20,12 +22,20 @@
 
 }
 
+/* .col-lg-4,
+.col-md-6,
+.col-sm-12 {
+  position: relative; 
+  z-index: 1; 
+} */
 
 
 /* css for Porjects.jsx */
 
 .projectsDiv {
   background-color: #eff2e8;
+  /* position: relative;
+  z-index: 0; */
 }
 
 .projectsTitle {

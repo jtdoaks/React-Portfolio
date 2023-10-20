@@ -1,6 +1,9 @@
 import Project from "../components/ProjectCard";
+// import Footer from "../components/Footer"
 
 import '../components/projectCard.css'
+
+import { Outlet } from 'react-router-dom';
 
 import techImage from "../assets/tech-blog.png";
 import jeopardyImage from "../assets/Jeopardy-Gameboard.png";
@@ -76,7 +79,9 @@ export default function Portfolio() {
             />
           </div>
         ))}
+        {/* <Outlet /> */}
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }
