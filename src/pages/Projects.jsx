@@ -61,6 +61,30 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
     gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
   },
+  {
+    id: 7,
+    title: "Placeholder App",
+    description: "This project is a placeholder for now.",
+    image: textImage,
+    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  },
+  {
+    id: 8,
+    title: "Placeholder App",
+    description: "This project is a placeholder for now.",
+    image: textImage,
+    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  },
+  {
+    id: 9,
+    title: "Placeholder App",
+    description: "This project is a placeholder for now.",
+    image: textImage,
+    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  },
 
   ]
 

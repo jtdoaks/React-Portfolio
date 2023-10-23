@@ -11,7 +11,7 @@ function Project({ title, description, image, deployedLink, gitHubLink }) {
           
 
                     <div className="img-div ">
-                        <img src={image} className="project-img rounded-start" alt="..." />
+                        <img src={image} className="project-img img-fluid rounded-start" alt="..." />
                     </div>
 
                     <div className="project-body ">
