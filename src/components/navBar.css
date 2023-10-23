@@ -4,25 +4,35 @@
   align-items: center;
   padding-top: 2rem;
 }
+.heading{
+  flex-direction: column;
+
+}
 
 .title {
-    text-align: left;
-    padding-left: 2rem;
-    
-  }
+  text-align: left;
+  padding-left: 2rem;
+  margin: 0;
+}
 
-  .nav-tabs {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
-    
-  }
+.titlePlus {
+  font-size: 16px;
+  margin-top: 5px; 
+  display: block;
+}
 
-.nav-link{
+.nav-tabs {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+
+}
+
+.nav-link {
   color: black !important;
 }
 
-  .nav-link.active{
-    color: white !important;
-    background-color: rgb(188, 188, 245) !important;
-  }
+.nav-link.active {
+  color: white !important;
+  background-color: rgb(188, 188, 245) !important;
+}

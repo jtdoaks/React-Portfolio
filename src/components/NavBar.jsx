@@ -7,8 +7,14 @@ function NavBar() {
 
   return (
     <div className = "navBar">
+<div className="heading">
+
       <h1 className="title">John Doaks</h1>
+      <h5 className="titlePlus">Full Stack Developer</h5>
+</div>
+
       <ul className="nav nav-tabs">
+
         <li className="nav-item">
           <Link
             to="/"
@@ -28,6 +34,7 @@ function NavBar() {
             Portfolio
           </Link>
         </li>
+
         <li className="nav-item">
           <Link
             to="/Contact"
@@ -37,6 +44,7 @@ function NavBar() {
             Contact
           </Link>
         </li>
+
         <li className="nav-item">
           <a href={Resume}
             className='nav-link'

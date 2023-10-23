@@ -1,22 +1,53 @@
-/* centers the footer icons */
-#root {
-    text-align: center;
+.home-root {
+  
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  background-color: #eff2e8;
+  display: flex;
+  align-items: center;
 }
 
-.home-root {
-   
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
-    background-color: #eff2e8;
-    
-  }
-
+.home-body {
+  flex: 1; /* Take up one-third of the available space */
+  display: inline-block;
+}
 
 .home-img {
-    height: 420px;
-    width: 580px;
-    border-radius: 8px;
-    border: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  height: 10%;
+  width: 90%;
+  border-radius: 8px;
+  border: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeImgDiv{
+  justify-content: flex-end;
+  flex: 2; /* Take up two-thirds of the available space */
+  display: inline-block;
+}
+
+
+
+/* styles for footer on the about page */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* centers the footer icons */
+#root {
+  text-align: center;
+}
+/* centers the footer icons */
