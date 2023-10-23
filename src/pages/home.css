@@ -1,3 +1,4 @@
+/* centers the footer icons */
 #root {
     text-align: center;
 }
@@ -5,7 +6,7 @@
 .home-root {
    
     margin: 0 auto;
-    padding: 2rem;
+    padding: 5px;
     text-align: center;
     background-color: #eff2e8;
     
