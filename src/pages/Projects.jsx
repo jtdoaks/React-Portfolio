@@ -103,9 +103,8 @@ export default function Portfolio() {
             />
           </div>
         ))}
-        {/* <Outlet /> */}
+
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }

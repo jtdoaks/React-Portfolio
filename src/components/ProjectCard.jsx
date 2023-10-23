@@ -11,12 +11,15 @@ function Project({ title, description, image, deployedLink, gitHubLink }) {
           
 
                     <div className="img-div ">
-                        <img src={image} className="project-img img-fluid rounded-start" alt="..." />
+                        <img src={image} className="project-img  rounded-start" alt="..." />
+                        <div className="overlay">
+                        <p className="card-text">{description}</p>
+                        </div>
                     </div>
 
                     <div className="project-body ">
                         <h5 className="card-title">{title}</h5>
-                        <p className="card-text">{description}</p>
+                        
 
                         <div className="project-links container-fluid">
                             <a href={deployedLink} className="card-link">Demo App</a>
