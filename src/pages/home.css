@@ -28,15 +28,26 @@
 }
 
 
+.image-container {
+  position: relative;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+
 
 /* styles for footer on the about page */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  /* this combo keeps it at the bottom of the scroll */
+  position: relative;
+  margin-top: auto; 
   width: 100%;
   padding: 10px; /* Adjust padding as needed */
   text-align: center;
+
 }
 
 

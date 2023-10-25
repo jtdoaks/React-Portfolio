@@ -11,7 +11,11 @@ export default function About() {
       </div>
 
       <div className="homeImgDiv ">
-        <img className="home-img" src={coverPhoto} alt="Card image cap"></img>
+        <div className="image-container">
+
+          <img className="home-img" src={coverPhoto} alt="Card image cap"></img>
+          <div className="bottomRight">Bottom Right</div>
+        </div>
       </div>
 
     </div>

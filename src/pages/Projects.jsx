@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Project from "../components/ProjectCard";
 // import Footer from "../components/Footer"
 
@@ -103,7 +104,6 @@ export default function Portfolio() {
             />
           </div>
         ))}
-
       </div>
     </div>
   );
