@@ -5,42 +5,61 @@
   text-align: center;
   background-color: #eff2e8;
   display: flex;
+  height: 100%;
   align-items: center;
-}
-
-.home-body {
-  flex: 1; /* Take up one-third of the available space */
-  display: inline-block;
-}
-
-.home-img {
-  height: 10%;
-  width: 90%;
-  border-radius: 8px;
-  border: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-display: none;
-}
-
-.home-img.visible {
-  display: block; /* Show the image with the "visible" class */
-}
-
-.homeImgDiv{
-  justify-content: flex-end;
-  flex: 2; /* Take up two-thirds of the available space */
-  display: inline-block;
-}
-
-
-.image-container {
   position: relative;
 }
 
-.bottomRight {
+.home-body {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.homeText{
+  margin-left: 20px;
+  padding: 20px;
+  align-self: flex-start;
+  /* position: absolute; 
+  top: 0; 
+  left: 0; */
+}
+
+.home-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  height: 800px;
+   /* height: 10%;
+  width: 90%; */
+  border-radius: 8px;
+  border: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.homeImgDiv{
+  position: relative;
+  /* justify-content: flex-end; */
+  flex: 2; /* Take up two-thirds of the available space */
+  display: flex;
+  justify-content: flex-start;
+  /* height: 800px;
+  overflow: hidden; */
+  overflow: hidden;
+  flex-direction: column;
+
+}
+
+
+.imageLabel {
   position: absolute;
-  bottom: 10px;
-  right: 50px;
+  bottom: 8px;
+  left: 25%;
+  font-size: 18px;
+  text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
+  color: white;
 }
 
 
@@ -67,3 +86,22 @@ display: none;
   text-align: center;
 }
 /* centers the footer icons */
+
+
+
+
+/* screen size right now */
+@media (max-width: 767px) { 
+  .home-root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .home-img {
+    margin: 0 auto;
+  }
+}
