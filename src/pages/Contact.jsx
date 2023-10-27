@@ -1,91 +1,87 @@
-import { useState } from 'react';
-import { validateName, validateEmail } from '../utils/helpers';
+import React, { useState } from 'react';
 
-export default function Contact() {
-
+function ContactPage() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
-
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'name') {
-      setName(inputValue);
-    } else {
-      setMessage(inputValue);
+    const { name, value } = e.target;
+    if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'name') {
+      setName(value);
+    } else if (name === 'subject') {
+      setSubject(value);
+    } else if (name === 'message') {
+      setMessage(value);
     }
   };
 
   const handleFormSubmit = (e) => {
-
     e.preventDefault();
 
+    // You can implement your validation functions (validateEmail, validateName) here
+    // and set the error message accordingly.
 
-    if (!validateEmail(email)) {
-      setErrorMessage('Email  is invalid');
-
-    
-     } else if (!validateName(name)) {
-      setErrorMessage('Name  is invalid');
-
-      return;
-    } 
-
-
-
-
-    setName('');
-    setEmail('');
-    setMessage('');
+    if (!email || !name || !subject || !message) {
+      setErrorMessage('Please fill out all fields.');
+    } else {
+      setErrorMessage(''); // Clear any previous error messages
+      // Your form submission logic goes here
+      console.log('Form submitted:', { name, email, subject, message });
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    }
   };
-
-
 
   return (
     <div>
-      <h1>Contact Page</h1>
-      <div className="container text-center">
-        
-        <form className="form" onSubmit={handleFormSubmit}>
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            placeholder="email"
-          />
-          <input
-            value={name}
-            name="name"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="name"
-          />
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="message"
-          />
+      {/* <h1>Contact Me</h1>
+      <form onSubmit={handleFormSubmit}>
+        <label>Name:</label>
+        <input type="text" name="name" value={name} onChange={handleInputChange} />
+        <br />
 
-          <button type="submit">Submit</button>
-        </form>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
+        <label>Email:</label>
+        <input type="email" name="email" value={email} onChange={handleInputChange} />
+        <br />
+
+        <label>Subject:</label>
+        <input type="text" name="subject" value={subject} onChange={handleInputChange} />
+        <br />
+
+        <label>Message:</label>
+        <textarea name="message" rows="5" value={message} onChange={handleInputChange}></textarea>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {errorMessage && <p className="error-message">{errorMessage}</p>} */}
+
+      <div>
+        <h2>Contact Information</h2>
+        <p>Email: jtdportfolio@gmail.com</p>
+        <p>Pittsburgh, PA, United States</p>
+        <p>Seeking Full-Time Employment</p>
+        <p> Email - Weekdays 9am-5pm</p> 
+        <p> Phone or Zoom - Thursday and Friday 9am-5pm</p>
+        <p>Thank you for visiting my portfolio! I appreciate your time and interest in my work. If you have any questions or would like to get in touch, please don't hesitate to reach out. I look forward to connecting with you</p>
+      </div>
+
+      <div>
+        <h2>Social Media</h2>
+        <a href="https://linkedin.com/in/john-doaks">LinkedIn</a>
+        <br />
+        <a href="https://github.com/jtdoaks">GitHub</a>
       </div>
     </div>
   );
 }
+
+export default ContactPage;
