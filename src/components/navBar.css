@@ -36,3 +36,44 @@
   color: white !important;
   background-color: rgb(188, 188, 245) !important;
 }
+
+
+/* Media query for navBar*/
+@media (max-width: 767px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    text-align: center; /* Adjusted to center the title text */
+    padding: 0; /* Reset padding */
+    margin: 0;
+  }
+
+  .titlePlus {
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .nav-tabs {
+    justify-content: center; /* Adjusted to center the navigation links */
+    padding: 0; /* Reset padding */
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center; /* Center the text within the navigation links */
+    padding: 10px;
+  }
+}
