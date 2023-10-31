@@ -31,7 +31,8 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  height: 800px;
+  height: 500px;
+  width: 500px;
    /* height: 10%;
   width: 90%; */
   border-radius: 8px;
@@ -56,7 +57,8 @@
 .imageLabel {
   position: absolute;
   bottom: 8px;
-  left: 25%;
+  left: 50%;
+  width: 20%;
   font-size: 18px;
   text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
   color: white;
@@ -66,7 +68,8 @@
 /* styles for footer on the about page */
 .footer {
   /* this combo keeps it at the bottom of the scroll */
-  position: relative;
+  position: fixed;
+  bottom: 0;
   margin-top: auto; 
   width: 100%;
   padding: 10px; /* Adjust padding as needed */

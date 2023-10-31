@@ -66,7 +66,7 @@ function ContactPage() {
 
       <div>
         <h2>Contact Information</h2>
-        <p>Email: jtdportfolio@gmail.com</p>
+        <p>Email: <a href="mailto:jtdportfolio@gmail.com">jtdportfolio@gmail.com</a></p>
         <p>Pittsburgh, PA, United States</p>
         <p>Seeking Full-Time Employment</p>
         <p> Email - Weekdays 9am-5pm</p> 

@@ -14,16 +14,16 @@ const homeImages = [
   bigRock,
   skippingRocks,
   throwing,
-  fieldIowa
+  // fieldIowa
 
 ]
 
 const imageLabels = [
   "Redwood State Forest, September 2018",
-  "Big Rock, Crescent City California, February 2020",
+  "Big Rock, Crescent City California, January 2020",
   "Skipping Stones, Six Rivers National Forest, September 2018",
   "Throwing Rocks at Shilsole Bay, Washington, March 2023",
-  "A Feild, Iowa, Septmeber 2017"
+  // "A Field, Iowa, Septmeber 2017"
 ];
 
 export default function About() {
