@@ -4,7 +4,7 @@ import coverPhoto from "../assets/cover-photo.png";
 import bigRock from "../assets/bigRock.png";
 import skippingRocks from "../assets/skippingRocks.png";
 import throwing from "../assets/throwing.png";
-import fieldIowa from "../assets/fieldIowa.png";
+
 
 
 import './home.css'
@@ -13,31 +13,29 @@ const homeImages = [
   coverPhoto,
   bigRock,
   skippingRocks,
-  throwing,
-  // fieldIowa
+  throwing
 
 ]
 
 const imageLabels = [
   "Redwood State Forest, September 2018",
-  "Big Rock, Crescent City California, January 2020",
+  "Big Rock, Crescent City California, February 2020",
   "Skipping Stones, Six Rivers National Forest, September 2018",
   "Throwing Rocks at Shilsole Bay, Washington, March 2023",
-  // "A Field, Iowa, Septmeber 2017"
+  
 ];
 
 export default function About() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Move to the next image in the array
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
-    }, 3000); // Change images every 3 seconds 
+  const handleSwipeLeft = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + homeImages.length) % homeImages.length);
+  };
 
-    return () => clearInterval(interval);
-  }, []);
+  const handleSwipeRight = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
+  };
 
   return (
     <div className="home-root">
@@ -56,11 +54,14 @@ export default function About() {
         <div className="homeImgDiv">
           <div className="image-container">
 
-            <img
-              className="home-img"
-              src={homeImages[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
-            />
+     
+              <img
+                className="home-img"
+                src={homeImages[currentImageIndex]}
+                alt={`Image ${currentImageIndex + 1}`}
+                onClick={handleSwipeRight}
+              />
+          
             <p className="imageLabel">{imageLabels[currentImageIndex]}</p>
           </div>
         </div>
