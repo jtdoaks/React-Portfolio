@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import coverPhoto from "../assets/cover-photo.png";
 import bigRock from "../assets/bigRock.png";
@@ -24,6 +25,7 @@ const imageLabels = [
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showCodingSkills, setShowCodingSkills] = useState(false);
+  const [showSecondButton, setShowSecondButton] = useState(false);
 
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
@@ -31,6 +33,8 @@ export default function About() {
 
   const toggleCodingSkills = () => {
     setShowCodingSkills((prevShowCodingSkills) => !prevShowCodingSkills);
+    // Set showSecondButton to true when the coding skills section is shown
+    setShowSecondButton(true);
   };
 
   return (
@@ -38,10 +42,8 @@ export default function About() {
       <div className="homeText">
         <div className="col-md-12 order-1 order-md-2">
           <div className="home-body">
-
             <h5 className="home-title">{showCodingSkills ? 'Coding Skills' : 'About Me'}</h5>
             <div className="content-container">
-
               {showCodingSkills ? (
                 <ul>
                   <li>HTML/CSS</li>
@@ -57,11 +59,13 @@ export default function About() {
                 <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. philosophy about coding. its about where I am right now. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
               )}
             </div>
-            <button  type="button" className="btn btn-light" onClick={toggleCodingSkills}>
+            <button type="button" className="btn btn-light" onClick={toggleCodingSkills}>
               {showCodingSkills ? 'About Me' : 'My Skills'}
             </button>
+            {showCodingSkills && showSecondButton && (
+              <Link to="/Portfolio" className="btn btn-light">My Projects</Link>
+            )}
           </div>
-
         </div>
       </div>
       <div className="imgBorderDiv col-md-8 order-2 order-md-1">
