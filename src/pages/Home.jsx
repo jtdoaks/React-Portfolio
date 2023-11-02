@@ -5,8 +5,6 @@ import bigRock from "../assets/bigRock.png";
 import skippingRocks from "../assets/skippingRocks.png";
 import throwing from "../assets/throwing.png";
 
-
-
 import './home.css'
 
 const homeImages = [
@@ -14,55 +12,67 @@ const homeImages = [
   bigRock,
   skippingRocks,
   throwing
-
-]
+];
 
 const imageLabels = [
   "Redwood State Forest, September 2018",
   "Big Rock, Crescent City California, February 2020",
   "Skipping Stones, Six Rivers National Forest, September 2018",
   "Throwing Rocks at Shilsole Bay, Washington, March 2023",
-  
 ];
 
 export default function About() {
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showCodingSkills, setShowCodingSkills] = useState(false);
 
-  const handleSwipeLeft = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + homeImages.length) % homeImages.length);
+  const handleImageClick = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
   };
 
-  const handleSwipeRight = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
+  const toggleCodingSkills = () => {
+    setShowCodingSkills((prevShowCodingSkills) => !prevShowCodingSkills);
   };
 
   return (
     <div className="home-root">
-      
-      <div className="home-body">
-        <div className="homeText">
-          <div className="col-md-12 order-1 order-md-2">
-            <div className="home-body">
-              <h5 className="home-title">About Me</h5>
-              <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
+      <div className="homeText">
+        <div className="col-md-12 order-1 order-md-2">
+          <div className="home-body">
+
+            <h5 className="home-title">{showCodingSkills ? 'Coding Skills' : 'About Me'}</h5>
+            <div className="content-container">
+
+              {showCodingSkills ? (
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>MySql2</li>
+                  <li>MongoDB</li>
+                  <li>Express.js</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Bootstrap</li>
+                </ul>
+              ) : (
+                <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. philosophy about coding. its about where I am right now. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
+              )}
             </div>
+            <button  type="button" className="btn btn-light" onClick={toggleCodingSkills}>
+              {showCodingSkills ? 'About Me' : 'My Skills'}
+            </button>
           </div>
+
         </div>
       </div>
-      <div className="col-md-8 order-2 order-md-1">
-
+      <div className="imgBorderDiv col-md-8 order-2 order-md-1">
         <div className="homeImgDiv">
           <div className="image-container">
-
-     
-              <img
-                className="home-img"
-                src={homeImages[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-                onClick={handleSwipeRight}
-              />
-          
+            <img
+              className="home-img"
+              src={homeImages[currentImageIndex]}
+              alt={`Image ${currentImageIndex + 1}`}
+              onClick={handleImageClick}
+            />
             <p className="imageLabel">{imageLabels[currentImageIndex]}</p>
           </div>
         </div>
@@ -70,4 +80,3 @@ export default function About() {
     </div>
   );
 }
-
