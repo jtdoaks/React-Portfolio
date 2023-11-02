@@ -1,61 +1,87 @@
 .home-root {
   
-  margin: 0 auto;
-  padding: 5px;
-  text-align: center;
   background-color: #eff2e8;
+  padding: 20px;
   display: flex;
-  height: 100%;
+  justify-content: center;
   align-items: center;
-  position: relative;
+  min-height: 100vh;
 }
 
 .home-body {
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 .homeText{
   margin-left: 20px;
   padding: 20px;
   align-self: flex-start;
-  /* position: absolute; 
-  top: 0; 
-  left: 0; */
+  
 }
 
-.image-container{
-  width: 700px;
-  height: 700px;
+.home-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.about-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .home-img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  border: 3px solid #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 100%; 
+  height: 100%; 
   object-fit: cover;
-  height: 500px;
-  width: 500px;
-   /* height: 10%;
-  width: 90%; */
-  border-radius: 8px;
-  border: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  object-position: center;
+}
+
+.home-img:hover {
+  transform: scale(1.05);
+  border: 3px solid #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .homeImgDiv{
   position: relative;
-  /* justify-content: flex-end; */
+  margin: 20px;
   flex: 2; /* Take up two-thirds of the available space */
   display: flex;
   justify-content: flex-start;
-  /* height: 800px;
-  overflow: hidden; */
+ 
   overflow: hidden;
   flex-direction: column;
 
+}
+
+.image-container {
+  width: 100%;
+  padding-bottom: 75%; 
+  position: relative;
+}
+
+.home-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 

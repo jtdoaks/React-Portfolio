@@ -39,9 +39,10 @@ export default function About() {
 
   return (
     <div className="home-root">
+      
       <div className="home-body">
         <div className="homeText">
-          <div className="col-md-8 order-1 order-md-2">
+          <div className="col-md-12 order-1 order-md-2">
             <div className="home-body">
               <h5 className="home-title">About Me</h5>
               <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
@@ -70,6 +71,3 @@ export default function About() {
   );
 }
 
-
-{/* <img className="home-img" src={coverPhoto} alt="Card image cap"></img>
-<div className="bottomRight">Bottom Right</div> */}
