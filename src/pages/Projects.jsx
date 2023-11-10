@@ -12,6 +12,7 @@ import bookImage from "../assets/book-review.png";
 import noteImage from "../assets/note-app.png";
 import weatherImage from "../assets/Weather-app.png";
 import textImage from "../assets/text-editor.png";
+import calculator from "../assets/calculator.png";
 
 export default function Portfolio() {
   const projects = [{
@@ -64,11 +65,11 @@ export default function Portfolio() {
   },
   {
     id: 7,
-    title: "Placeholder App",
-    description: "This project is a placeholder for now.",
-    image: textImage,
-    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+    title: "Calculator App",
+    description: "This is a simple calculator project built with javascript, html and css. This app shows fundamental javascript skills.",
+    image: calculator,
+    deployedLink: "https://jtdoaks.github.io/Calculator-App/",
+    gitHubLink: "https://github.com/jtdoaks/Calculator-App"
   },
   {
     id: 8,
