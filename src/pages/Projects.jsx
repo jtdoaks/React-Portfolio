@@ -23,14 +23,14 @@ export default function Portfolio() {
     deployedLink: "https://aqueous-peak-96674-87f7ff9c0b31.herokuapp.com/ ",
     gitHubLink: "https://github.com/jtdoaks/Tech-Blog-Application"
   },
-  {
-    id: 2,
-    title: "Jeopardy Game",
-    description: "This application allows users to play a Jeopardy-based trivia quiz game by selecting categories and answering questions to earn points. The game fetches random categories and questions from the jservice.io API and provides an interactive webpage for users to play.",
-    image: jeopardyImage,
-    deployedLink: "https://kevalpatel6.github.io/Jeopardy/",
-    gitHubLink: "https://github.com/jtdoaks/Jeopardy/tree/main"
-  },
+  // {
+  //   id: 2,
+  //   title: "Jeopardy Game",
+  //   description: "This application allows users to play a Jeopardy-based trivia quiz game by selecting categories and answering questions to earn points. The game fetches random categories and questions from the jservice.io API and provides an interactive webpage for users to play.",
+  //   image: jeopardyImage,
+  //   deployedLink: "https://kevalpatel6.github.io/Jeopardy/",
+  //   gitHubLink: "https://github.com/jtdoaks/Jeopardy/tree/main"
+  // },
   {
     id: 3,
     title: "Book Review Website",
@@ -39,14 +39,14 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/BookReview/",
     gitHubLink: "https://github.com/jtdoaks/BookReview"
   },
-  {
-    id: 4,
-    title: "Note Taking App",
-    description: "This project demonstrates the setup of an Express web application with API and HTML routes. It includes a function to send POST requests to an API endpoint.",
-    image: noteImage,
-    deployedLink: "https://jtdoaks.github.io/Note-Taking-App/",
-    gitHubLink: "https://github.com/jtdoaks/Note-Taking-App"
-  },
+  // {
+  //   id: 4,
+  //   title: "Note Taking App",
+  //   description: "This project demonstrates the setup of an Express web application with API and HTML routes. It includes a function to send POST requests to an API endpoint.",
+  //   image: noteImage,
+  //   deployedLink: "https://jtdoaks.github.io/Note-Taking-App/",
+  //   gitHubLink: "https://github.com/jtdoaks/Note-Taking-App"
+  // },
   {
     id: 5,
     title: "Weather Tracker",
@@ -55,14 +55,14 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/Weather-Application",
     gitHubLink: "https://github.com/jtdoaks/Weather-Application"
   },
-  {
-    id: 6,
-    title: "Text Editing App",
-    description: "This project is a Progressive Web Application using webpack, service workers and manifest.",
-    image: textImage,
-    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
-  },
+  // {
+  //   id: 6,
+  //   title: "Text Editing App",
+  //   description: "This project is a Progressive Web Application using webpack, service workers and manifest.",
+  //   image: textImage,
+  //   deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+  //   gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  // },
   {
     id: 7,
     title: "Calculator App",
@@ -71,22 +71,22 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/Calculator-App/",
     gitHubLink: "https://github.com/jtdoaks/Calculator-App"
   },
-  {
-    id: 8,
-    title: "Placeholder App",
-    description: "This project is a placeholder for now.",
-    image: textImage,
-    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
-  },
-  {
-    id: 9,
-    title: "Placeholder App",
-    description: "This project is a placeholder for now.",
-    image: textImage,
-    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
-  },
+  // {
+  //   id: 8,
+  //   title: "Placeholder App",
+  //   description: "This project is a placeholder for now.",
+  //   image: textImage,
+  //   deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+  //   gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  // },
+  // {
+  //   id: 9,
+  //   title: "Placeholder App",
+  //   description: "This project is a placeholder for now.",
+  //   image: textImage,
+  //   deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+  //   gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  // },
 
   ]
 
