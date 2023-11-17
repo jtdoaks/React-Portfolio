@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
+  background: linear-gradient(to right, #c1d9c3, #c0d9e6);
 }
 .heading{
   flex-direction: column;

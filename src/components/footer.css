@@ -1,5 +1,5 @@
 .footer {
-  background-color: #eff2e8;
+  background: linear-gradient(to right, #c1d9c3, #c0d9e6);
   max-height: 50px;
   height: 100vh;
   /* padding-top: 3rem; */
