@@ -17,9 +17,9 @@ const homeImages = [
 
 const imageLabels = [
   "Redwood State Forest, September 2018",
-  "Big Rock, Crescent City California, February 2020",
-  "Skipping Stones, Six Rivers National Forest, September 2018",
-  "Throwing Rocks at Shilsole Bay, Washington, March 2023",
+  "Crescent City California, February 2020",
+  "Six Rivers National Forest, September 2018",
+  "Shilsole Bay, Washington, March 2023",
 ];
 
 export default function About() {
@@ -40,12 +40,12 @@ export default function About() {
   return (
     <div className="home-root">
       <div className="homeText">
-        <div className="col-md-12 order-1 order-md-2">
+        <div className="col-md-12 col-lg-12 col-sm-12 order-1 order-md-1">
           <div className="home-body">
             <h5 className="home-title">{showCodingSkills ? 'Coding Skills' : 'About Me'}</h5>
             <div className="content-container">
               {showCodingSkills ? (
-                <ul>
+                <div className="skillsContainer">
                   <li>HTML/CSS</li>
                   <li>JavaScript</li>
                   <li>MySql2</li>
@@ -54,7 +54,7 @@ export default function About() {
                   <li>React</li>
                   <li>Node.js</li>
                   <li>Bootstrap</li>
-                </ul>
+                </div >
               ) : (
                 <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. philosophy about coding. its about where I am right now. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
               )}
@@ -68,7 +68,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="imgBorderDiv col-md-8 order-2 order-md-1">
+      <div className="imgBorderDiv col-md-6 col-lg-6 col-sm-6 order-2 order-md-2">
         <div className="homeImgDiv">
           <div className="image-container">
             <img
