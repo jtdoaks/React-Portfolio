@@ -66,7 +66,7 @@ export default function Portfolio() {
   {
     id: 7,
     title: "Calculator App",
-    description: "This is a simple calculator project built with javascript, html and css. This app shows fundamental javascript skills.",
+    description: "This is a simple calculator project built with JavaScript, HTML and CSS many fundamental skills.",
     image: calculator,
     deployedLink: "https://jtdoaks.github.io/Calculator-App/",
     gitHubLink: "https://github.com/jtdoaks/Calculator-App"

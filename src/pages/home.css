@@ -114,11 +114,21 @@
 }
 
 
+.btn-light{
+  margin: 5px;
+
+}
 
 
 
 
-
+.skillImages {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  object-fit: contain ;
+  
+}
 
 
 /* centers the footer icons */

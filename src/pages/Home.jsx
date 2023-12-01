@@ -6,6 +6,21 @@ import bigRock from "../assets/bigRock.png";
 import skippingRocks from "../assets/skippingRocks.png";
 import throwing from "../assets/throwing.png";
 
+import bootstrap from "../assets/bootstrap.png";
+import css3 from "../assets/css3.png";
+import express from "../assets/express.png";
+import github from "../assets/github-logo.png";
+import html5 from "../assets/html5.png";
+import jQuery from "../assets/jQuery.png";
+import JavaScript from "../assets/JS.png";
+import mern from "../assets/mern.jpg";
+import mongodb from "../assets/mongodb.png";
+import MySQL from "../assets/MySQL.jpg";
+import nodeJS from "../assets/nodeJS.png";
+import npmLogo from "../assets/npm_logo.png";
+import ReactLogo from "../assets/React.png";
+
+
 import './home.css'
 
 const homeImages = [
@@ -15,6 +30,7 @@ const homeImages = [
   throwing
 ];
 
+
 const imageLabels = [
   "Redwood State Forest, September 2018",
   "Crescent City California, February 2020",
@@ -22,10 +38,28 @@ const imageLabels = [
   "Shilsole Bay, Washington, March 2023",
 ];
 
+const skillLogos = [
+  bootstrap,
+  css3,
+  express,
+  github,
+  html5,
+  jQuery,
+  JavaScript,
+  mern,
+  mongodb,
+  MySQL,
+  nodeJS,
+  npmLogo,
+  ReactLogo
+]
+
+
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showCodingSkills, setShowCodingSkills] = useState(false);
   const [showSecondButton, setShowSecondButton] = useState(false);
+  const [showSkillsOverlay, setShowSkillsOverlay] = useState(false);
 
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
@@ -35,6 +69,7 @@ export default function About() {
     setShowCodingSkills((prevShowCodingSkills) => !prevShowCodingSkills);
     // Set showSecondButton to true when the coding skills section is shown
     setShowSecondButton(true);
+    setShowSkillsOverlay(true);
   };
 
   return (
@@ -46,14 +81,16 @@ export default function About() {
             <div className="content-container">
               {showCodingSkills ? (
                 <div className="skillsContainer">
-                  <li>HTML/CSS</li>
-                  <li>JavaScript</li>
-                  <li>MySql2</li>
-                  <li>MongoDB</li>
-                  <li>Express.js</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>Bootstrap</li>
+                  
+                  <div className="skillsDiv">
+                    {skillLogos.map((image, index) => (
+                      <img
+                        key={index}
+                        src={image}
+                        alt={`Skill ${index + 1}`}
+                        className="skillImages"
+                      />
+                    ))} </div>
                 </div >
               ) : (
                 <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. philosophy about coding. its about where I am right now. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
