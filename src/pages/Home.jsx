@@ -19,6 +19,7 @@ import MySQL from "../assets/MySQL.jpg";
 import nodeJS from "../assets/nodeJS.png";
 import npmLogo from "../assets/npm_logo.png";
 import ReactLogo from "../assets/React.png";
+import GraphQL from "../assets/graphQL.jpg";
 
 import './home.css';
 
@@ -50,6 +51,7 @@ const skillLogos = [
   MySQL,
   nodeJS,
   npmLogo,
+  GraphQL,
 ];
 
 export default function About() {
@@ -68,15 +70,15 @@ export default function About() {
     setShowSecondButton(true);
     setShowSkillsOverlay(true);
 
-    // Toggle the visibility of photos
+    // Toggle the visibility of photos and imgBorderDiv
     setShowPhotos((prevShowPhotos) => !prevShowPhotos);
   };
 
   return (
-    <div className="home-root">
+    <div className={`home-root col-md-12 col-lg-12 col-sm-12 order-1 order-md-1 ${showCodingSkills ? 'full-page' : ''}`}>
       <div className="homeText">
-        <div className="col-md-12 col-lg-12 col-sm-12 order-1 order-md-1">
-          <div className="home-body">
+        <div className="bigDiv">
+          <div className={`home-body ${showCodingSkills ? 'expanded' : ''}`}>
             <h5 className="home-title">{showCodingSkills ? 'Coding Skills' : 'About Me'}</h5>
             <div className="content-container">
               {showCodingSkills ? (
@@ -105,8 +107,8 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="imgBorderDiv col-md-6 col-lg-6 col-sm-6 order-2 order-md-2">
-        {showPhotos && (
+      {showPhotos && (
+        <div className="imgBorderDiv col-md-6 col-lg-6 col-sm-6 order-2 order-md-2">
           <div className="homeImgDiv">
             <div className="image-container">
               <img
@@ -118,8 +120,8 @@ export default function About() {
               <p className="imageLabel">{imageLabels[currentImageIndex]}</p>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
