@@ -156,3 +156,72 @@
     margin: 0 auto;
   }
 }
+
+
+.home-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeText {
+  flex: 1;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skillImages {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin: 10px; /* Add margin between skill logos */
+}
+
+.imgBorderDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.homeImgDiv {
+  max-width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.home-img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.imageLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .home-root {
+    flex-direction: column;
+  }
+
+  .imgBorderDiv {
+    order: 1;
+  }
+}

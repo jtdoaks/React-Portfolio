@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import coverPhoto from "../assets/cover-photo.png";
@@ -20,8 +20,7 @@ import nodeJS from "../assets/nodeJS.png";
 import npmLogo from "../assets/npm_logo.png";
 import ReactLogo from "../assets/React.png";
 
-
-import './home.css'
+import './home.css';
 
 const homeImages = [
   coverPhoto,
@@ -29,7 +28,6 @@ const homeImages = [
   skippingRocks,
   throwing
 ];
-
 
 const imageLabels = [
   "Redwood State Forest, September 2018",
@@ -39,27 +37,27 @@ const imageLabels = [
 ];
 
 const skillLogos = [
+  ReactLogo,
+  JavaScript,
+  mern,
   bootstrap,
-  css3,
   express,
   github,
   html5,
+  css3,
   jQuery,
-  JavaScript,
-  mern,
   mongodb,
   MySQL,
   nodeJS,
   npmLogo,
-  ReactLogo
-]
-
+];
 
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showCodingSkills, setShowCodingSkills] = useState(false);
   const [showSecondButton, setShowSecondButton] = useState(false);
   const [showSkillsOverlay, setShowSkillsOverlay] = useState(false);
+  const [showPhotos, setShowPhotos] = useState(true);
 
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
@@ -67,9 +65,11 @@ export default function About() {
 
   const toggleCodingSkills = () => {
     setShowCodingSkills((prevShowCodingSkills) => !prevShowCodingSkills);
-    // Set showSecondButton to true when the coding skills section is shown
     setShowSecondButton(true);
     setShowSkillsOverlay(true);
+
+    // Toggle the visibility of photos
+    setShowPhotos((prevShowPhotos) => !prevShowPhotos);
   };
 
   return (
@@ -81,7 +81,6 @@ export default function About() {
             <div className="content-container">
               {showCodingSkills ? (
                 <div className="skillsContainer">
-                  
                   <div className="skillsDiv">
                     {skillLogos.map((image, index) => (
                       <img
@@ -90,8 +89,9 @@ export default function About() {
                         alt={`Skill ${index + 1}`}
                         className="skillImages"
                       />
-                    ))} </div>
-                </div >
+                    ))}
+                  </div>
+                </div>
               ) : (
                 <p className="about-text">This is about John. Something about how I love plants and also coding. Idk dichotomy. philosophy about coding. its about where I am right now. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate cum provident, libero voluptatibus nesciunt repellendus fugit voluptas, beatae id, ad quasi expedita omnis totam obcaecati distinctio. Mollitia, ducimus incidunt.</p>
               )}
@@ -106,17 +106,19 @@ export default function About() {
         </div>
       </div>
       <div className="imgBorderDiv col-md-6 col-lg-6 col-sm-6 order-2 order-md-2">
-        <div className="homeImgDiv">
-          <div className="image-container">
-            <img
-              className="home-img"
-              src={homeImages[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
-              onClick={handleImageClick}
-            />
-            <p className="imageLabel">{imageLabels[currentImageIndex]}</p>
+        {showPhotos && (
+          <div className="homeImgDiv">
+            <div className="image-container">
+              <img
+                className="home-img"
+                src={homeImages[currentImageIndex]}
+                alt={`Image ${currentImageIndex + 1}`}
+                onClick={handleImageClick}
+              />
+              <p className="imageLabel">{imageLabels[currentImageIndex]}</p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
