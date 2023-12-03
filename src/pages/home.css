@@ -3,9 +3,9 @@
   background: linear-gradient(to right, #c1d9c3, #c0d9e6);
   padding: 20px;
   display: flex;
-  
+
   min-height: 100vh;
-  
+
 }
 
 .content-container {
@@ -131,15 +131,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .skillImages {
-  width: 225px;
-  height: 225px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: contain;
   margin: 10px;
-
+  background-color: #eff2e8;
 }
 
 .imgBorderDiv {

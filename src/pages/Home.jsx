@@ -11,15 +11,17 @@ import css3 from "../assets/css3.png";
 import express from "../assets/express.png";
 import github from "../assets/github-logo.png";
 import html5 from "../assets/html5.png";
-import jQuery from "../assets/jQuery.png";
+import jQuery from "../assets/jQuery2.jpg";
 import JavaScript from "../assets/JS.png";
 import mern from "../assets/mern.jpg";
 import mongodb from "../assets/mongodb.png";
-import MySQL from "../assets/MySQL.jpg";
+import MySQL from "../assets/mySQL4.jpg";
 import nodeJS from "../assets/nodeJS.png";
 import npmLogo from "../assets/npm_logo.png";
 import ReactLogo from "../assets/React.png";
 import GraphQL from "../assets/graphQL.jpg";
+import jwt from "../assets/jwt.jpg";
+import dayjs from "../assets/dayjs.png";
 
 import './home.css';
 
@@ -41,17 +43,19 @@ const skillLogos = [
   ReactLogo,
   JavaScript,
   mern,
+  nodeJS,
   bootstrap,
   express,
-  github,
   html5,
   css3,
+  github,
   jQuery,
   mongodb,
   MySQL,
-  nodeJS,
   npmLogo,
   GraphQL,
+  jwt,
+  dayjs,
 ];
 
 export default function About() {
