@@ -39,14 +39,14 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/BookReview/",
     gitHubLink: "https://github.com/jtdoaks/BookReview"
   },
-  // {
-  //   id: 4,
-  //   title: "Note Taking App",
-  //   description: "This project demonstrates the setup of an Express web application with API and HTML routes. It includes a function to send POST requests to an API endpoint.",
-  //   image: noteImage,
-  //   deployedLink: "https://jtdoaks.github.io/Note-Taking-App/",
-  //   gitHubLink: "https://github.com/jtdoaks/Note-Taking-App"
-  // },
+  {
+    id: 4,
+    title: "Note Taking App",
+    description: "This project demonstrates the setup of an Express web application with API and HTML routes. It includes a function to send POST requests to an API endpoint.",
+    image: noteImage,
+    deployedLink: "https://jtdoaks.github.io/Note-Taking-App/",
+    gitHubLink: "https://github.com/jtdoaks/Note-Taking-App"
+  },
   {
     id: 5,
     title: "Weather Tracker",
@@ -55,14 +55,14 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/Weather-Application",
     gitHubLink: "https://github.com/jtdoaks/Weather-Application"
   },
-  // {
-  //   id: 6,
-  //   title: "Text Editing App",
-  //   description: "This project is a Progressive Web Application using webpack, service workers and manifest.",
-  //   image: textImage,
-  //   deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-  //   gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
-  // },
+  {
+    id: 6,
+    title: "Text Editing App",
+    description: "This project is a Progressive Web Application using webpack, service workers and manifest.",
+    image: textImage,
+    deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
+    gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
+  },
   {
     id: 7,
     title: "Calculator App",

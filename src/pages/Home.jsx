@@ -83,10 +83,10 @@ export default function About() {
       <div className="homeText">
         <div className="bigDiv">
           <div className={`home-body ${showCodingSkills ? 'expanded' : ''}`}>
-            <h5 className="home-title">{showCodingSkills ? 'Coding Skills' : 'About Me'}</h5>
+            <h5 className="home-title">{showCodingSkills ? 'My Skills' : 'About Me'}</h5>
             <div className="content-container">
               {showCodingSkills ? (
-                <div className="skillsContainer">
+                <div className={`skillsContainer ${showCodingSkills ? 'show' : ''}`}>
                   <div className="skillsDiv">
                     {skillLogos.map((image, index) => (
                       <img
