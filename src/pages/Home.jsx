@@ -86,7 +86,7 @@ export default function About() {
             <h5 className="home-title">{showCodingSkills ? 'My Skills' : 'About Me'}</h5>
             <div className="content-container">
               {showCodingSkills ? (
-                <div className={`skillsContainer ${showCodingSkills ? 'show' : ''}`}>
+                <div className="skillsContainer">
                   <div className="skillsDiv">
                     {skillLogos.map((image, index) => (
                       <img
