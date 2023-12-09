@@ -13,6 +13,7 @@ import noteImage from "../assets/note-app.png";
 import weatherImage from "../assets/Weather-app.png";
 import textImage from "../assets/text-editor.png";
 import calculator from "../assets/calculator.png";
+import pokemonQuiz from "../assets/pokemonQuiz.png";
 
 export default function Portfolio() {
   const projects = [{
@@ -71,14 +72,14 @@ export default function Portfolio() {
     deployedLink: "https://jtdoaks.github.io/Calculator-App/",
     gitHubLink: "https://github.com/jtdoaks/Calculator-App"
   },
-  // {
-  //   id: 8,
-  //   title: "Placeholder App",
-  //   description: "This project is a placeholder for now.",
-  //   image: textImage,
-  //   deployedLink: "https://jtdoaks.github.io/PWA-Text-Editor/",
-  //   gitHubLink: "https://github.com/jtdoaks/PWA-Text-Editor"
-  // },
+  {
+    id: 8,
+    title: "POKéMON Quiz",
+    description: "This project  is a responsive web application crafted with HTML, CSS, and JavaScript, featuring a dynamic quiz interface, countdown timer, and high score tracking for an engaging user experience..",
+    image: pokemonQuiz,
+    deployedLink: "https://jtdoaks.github.io/Coding-Quiz/ ",
+    gitHubLink: "https://github.com/jtdoaks/Coding-Quiz"
+  },
   // {
   //   id: 9,
   //   title: "Placeholder App",
